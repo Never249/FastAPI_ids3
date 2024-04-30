@@ -6,12 +6,12 @@ app = FastAPI()
 
 @app.get("/")
 async def p_index():
-    return {"FIO": "Долгушина Ангелина Алексеевна"}
+    return {"FIO": "Шмидт А А"}
 
 
 @app.get("/users", response_class=HTMLResponse)
 async def p_users():
-    output = "<h3> Phone Number:+7923*****94 </h3>"
+    output = "<h3> Phone Number:+78005553535 </h3>"
     return output
 
 @app.get("/tools", response_class=HTMLResponse)
